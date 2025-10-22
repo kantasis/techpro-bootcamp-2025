@@ -4,9 +4,14 @@ def isPrime(n):
          return False
    return True
 
-input = 54
-output = input
-while ( not isPrime(output)):
-   output = output + 1
+input_number = 57
 
-print("Next prime to ", input, "is", output, '.')
+temporary_number = input_number
+while ( not isPrime(temporary_number)):
+   for i in range(2,temporary_number):
+      if (temporary_number % i == 0): 
+         print("Prime factor: ", i)
+         temporary_number = temporary_number // i 
+         break
+print("Prime factor: ", temporary_number)
+
