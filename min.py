@@ -8,9 +8,6 @@ summ = 0
 for element in list_of_elements:
    summ = summ + element
 
-
-
-print("Sum is",summ)
 print("Average is",summ / len(list_of_elements ) )
 
 
