@@ -49,23 +49,26 @@ class LinkedList:
       while i<n:
          current = current.next
          i = i+1
-         if current == None
+         if current == None:
             return "There is no such"
 
       return current.data
 
-my_linked_list = LinkedList()
 
-my_linked_list.addElement("George")
-my_linked_list.addElement("Afroxilanthi")
-my_linked_list.addElement("John")
-my_linked_list.addElement("Peter")
-my_linked_list.addElement("Paul")
+text = "George"
 
-# print(my_linked_list.head.next.next)
-# print(my_linked_list.length()) 
-# my_linked_list.printEverything()
-print(my_linked_list.get(10))
+stack = LinkedList()
+
+for character in text:
+   stack.addElement(character)
+
+while stack.head != None:
+   print(stack.get(0))
+   stack.removeHead()
+
+
+
+
 
 
 
