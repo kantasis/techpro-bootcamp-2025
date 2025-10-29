@@ -12,6 +12,10 @@ class LinkedList:
       node.next = self.head
       self.head = node
 
+   def removeHead(self):
+      temp = self.head
+      self.head = self.head.next
+      del temp
 
    def length(self):
       counter = 1
